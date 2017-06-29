@@ -1,9 +1,8 @@
 import { Chronos } from "./Chronos.js"
 
 /**
- * Chronos mediator node object.
- * Can be chained into node list. 
- * Can speedup time or make slow-mo effect. 
+ * Root node for frontend javascript. 
+ * Is based on requestAnimationFrame, so it updates at least every 16.7ms or more often. 
  * 
  * @constructor
  * @extends Chronos
