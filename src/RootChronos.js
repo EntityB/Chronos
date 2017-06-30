@@ -8,11 +8,11 @@ import { Chronos } from "./Chronos.js"
  * @extends Chronos
  * @param {Boolean} [opt_updating] - if false, node will not update node childs by default
  */
-var TopChronos = function () {
+var RootChronos = function () {
     Chronos.call(this);
 };
 
-TopChronos.prototype = Object.assign({}, Chronos.prototype, {
+RootChronos.prototype = Object.assign({}, Chronos.prototype, {
     _init: function () {
         Chronos.prototype._init.call(this);
         this._startTime = 0;
